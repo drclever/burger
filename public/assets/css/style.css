@@ -2,7 +2,7 @@ body {
     background-color: aqua
 }
 
-h1,h2 {
+h1,h2,form {
     text-align: center;
 }
 
@@ -11,10 +11,6 @@ h1,h2 {
     justify-content: space-around;
     align-items: baseline;
     align-content: space-between;
-}
-
-form {
-    text-align: center;
 }
 
 button {
