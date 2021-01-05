@@ -1,0 +1,42 @@
+<header>
+        <h1>Eat Da Burger</h1>
+        <img src="../public/assets/img/burger2.png" alt="burgerImg" class="burgerImg">
+        <hr>
+</header>
+
+{{!-- https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_justify-content_space-around --}}
+<div class="flexbox-container">
+    <div>
+        {{!-- > Logic is in the partials directory --}}            
+        <ul id="uneaten">
+            <h2>Enjoy Da Burgers</h2>
+            {{#each burger}}
+            {{#unless devoured}}
+            {{> burger/burger-block devoured=false}}
+            {{/unless}}
+            {{/each}}
+        </ul>
+    </div>
+
+    <div>
+        <h2>Order Da Burgers</h2>
+        <form class="burgerInput">
+        <input type="text" id="orderBurger" name="burger_name">
+            <div class="flexbox-container">
+                <button type="submit" id="burgerBtn">Add Da Burger</button>
+            </div>
+        </form>
+        
+    </div>
+    <div>
+        {{!-- > Logic is in the partials directory --}}
+        <ul id="eaten">
+            <h2>Devoured Da Burgers</h2>
+            {{#each burger}}
+            {{#if devoured}}
+            {{> burger/burger-block devoured=true}}
+            {{/if}}
+            {{/each}}
+        </ul>
+    </div>
+</div>
