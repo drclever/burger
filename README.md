@@ -7,14 +7,6 @@
 
 A new application called 'Eat Da Burger' has been created in order to allow users to enter the names of burgers they wish to order.  They can order the burger, devour the burger and see what has been eaten on the page. This app was developed using NODE, Express Handlebars and MySQL and deployed in Heroku with JawDB MySQL.
 
-The command-line application allows the user to:
-* Add departments, roles, employees
-* View departments, roles, employees
-* Update employee roles
-* Update employee managers
-* View employees by manager
-* Delete departments, roles, and employees
-
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
